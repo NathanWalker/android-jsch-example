@@ -8,14 +8,14 @@
     "noEmitHelpers": true,
     "noEmitOnError": true,
     "skipLibCheck": true,
-    "lib": ["ESNext", "dom"],
+    "lib": ["ESNext", "dom", "WebWorker"],
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"],
       "@/*": ["src/*"]
     }
   },
-  "include": ["src/tests/**/*.ts", "src/**/*.ios.ts", "src/**/*.android.ts"],
+  "include": ["src/tests/**/*.ts", "src/**/*.ios.ts", "src/**/*.android.ts", "src/**/*.worker.ts", "custom-types/*.d.ts"],
   "files": ["./src/main.ts", "./references.d.ts", "./src/polyfills.ts"],
   "exclude": ["node_modules", "platforms", "e2e"]
 }
